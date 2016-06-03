@@ -1,0 +1,15 @@
+{
+  "name": "tiltedtwitchbot",
+  "version": "0.0.1",
+  "description": "This is my twitch bot.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Welch",
+  "license": "ISC",
+  "dependencies": {
+    "tmi.js": "0.0.29"
+  },
+  "devDependencies": {}
+}
