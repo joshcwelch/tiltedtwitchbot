@@ -11,5 +11,13 @@
   "dependencies": {
     "tmi.js": "0.0.29"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshcwelch/tiltedtwitchbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshcwelch/tiltedtwitchbot/issues"
+  },
+  "homepage": "https://github.com/joshcwelch/tiltedtwitchbot#readme"
 }
