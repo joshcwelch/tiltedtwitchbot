@@ -2,6 +2,197 @@
 
 }
 
+header {
+	background: #4B79A1; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	max-height: 1080px;
+	width: 100%;
+}
+
 body {
 
+}
+
+footer {
+	background-color: #fff;
+	height: 200px;
+	width: 100%;
+}
+
+a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
+	color: #fff;
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+	text-decoration: none;
+}
+
+.section-white {
+	background-color: #fff;
+	height: 700px;
+	width: 100%;
+}
+
+.section-grey{
+	background-color: #f2f2f2;
+	height: 700px;
+	width: 100%;
+}
+
+.top-nav {
+	align-items: center;
+	padding-top: 20px;
+}
+
+.top-brand {
+	float: left;
+	max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+.btn {
+	color: #fff;
+	background-color:rgba(0,0,0,0.4);
+	border: 1.6px #fff solid;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color:rgba(0,0,0,0.6);
+	border: 1.6px #fff solid;
+}
+
+.undln-btn {
+	background-color: inherit;
+	border: none;
+	padding: 10px;
+}
+
+.undln-btn:hover {
+	background-color: inherit;
+	border: none;
+	border-radius: 0px;
+	border-bottom: #fff 1.6px solid;
+}
+
+.tnm-submenu {
+	display: none;
+	width: 100%;
+	background-color:#283E52;
+	border-bottom: .4px solid #fff;
+}
+
+#topmbl {
+	max-width: 768px;
+	width: 100%;
+	background-color:#283E52;
+	height: 50px;
+	font-size: 30px;
+	display: none;
+}
+
+#topmbl ul, li {
+	list-style-type: none;
+	float: left;
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	left: 0;
+}
+
+#topmbl li {
+	display: inline;
+}
+
+#topmbl a {
+	float:right;
+	padding-right: 20px;
+	text-align: center;
+}
+
+#topmbl a, a:hover, a:target, a:focus, a:active {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#tmn-div {
+	display: inline;
+}
+
+#features-sec {
+	border-bottom: .1em #ccc solid;
+}
+
+#why-tb {
+
+}
+
+#dev-info {
+	border-top: .1em #ccc solid;
+}
+
+#getstartinfo {
+	height: 400px;
+	width: 100%;
+	background: linear-gradient(270deg, #1c7b9f, #0c3952);
+  background-size: 400% 400%;
+  -webkit-animation: bgAnimation 5s ease infinite;
+  -moz-animation: bgAnimation 5s ease infinite;
+  -o-animation: bgAnimation 5s ease infinite;
+  animation: bgAnimation 5s ease infinite;
+	display:
+}
+
+.jumbotron {
+	background: inherit;
+	width: 100%;
+	text-align:center;
+	display: inline-block;
+	align-self: auto;
+	padding: 20px
+}
+
+.col-md-6 {
+	float: inherit;
+}
+
+#head-title div {
+	display: inline-block;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .top-nav     { display: none; }
+  #topmbl  { display:inline-block; }
+}
+
+/* keyframes for animation */
+
+@-webkit-keyframes bgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes bgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

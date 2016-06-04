@@ -1,9 +1,87 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Chat</title>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/style.css">
   </head>
+
+  <header>
+    <div class="top-nav-mobile" id="topmbl">
+      <img src="public/tiltedtextsmall.png" style="margin-left:20px;margin-bottom:10px;"/>
+      <a id="tnm-button">☰</a>
+      <ul id="tnm-menu">
+        <li class="tnm-submenu" style="border-top:.4px solid #fff;"> Test</li>
+        <li class="tnm-submenu">Login</li>
+        <li class="tnm-submenu">Features</li>
+        <li class="tnm-submenu">Getting Started</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-nav" id="topdt">
+            <img src="public/tiltedtextsmall.png" class="top-brand"/>
+            <button type="button" class="btn" style="float:right;">Login</button>
+            <button type="button" class="btn undln-btn" style="float:right;">Getting Started</button>
+            <a href="#features-sec"><button type="button" class="btn undln-btn" style="float:right;">Features</button></a>
+           </div>
+          </div>
+      </div>
+        <div class="jumbotron">
+          <div class = "row">
+           <div class="col-md-6">
+            <img src="public/tboticonnwwhite.png" style="padding-right:40px;"/>
+           </div>
+           <div class="col-md-6">
+             <img src="public/tiltedtext.png" />
+           </div>
+         </div>
+      </div>
+   </header>
+
   <body>
+    <div class="section-white" id="features-sec">
+      Test div
+    </div>
+    <div class="section-grey" id="why-tb">
+      Test div 2
+    </div>
+    <div class="section-white" id="dev-info">
+      test div 3
+    </div>
+    <div id="getstartinfo">
+      test div 4
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+      //set landing div to screen width and height
+      $( document ).ready(function() {
+        $('header').height( $(window).height() );
+      });
+    function resizeHeader(){
+      $('header').height( $(window).height() )
+    }
+      $(document).ready(function() {
+        resizeHeader();
+    });
+      $(window).resize(function() {
+        resizeHeader();
+   });
+   </script>
+  <script>
+  $(function() {
+    $('#tnm-button').click(function(){
+      $('.tnm-submenu').slideToggle();
+    });
+  });
+  </script>
   </body>
+  <footer>
+  </footer>
+</html>
