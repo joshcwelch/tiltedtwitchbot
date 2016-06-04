@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="public/style.css">
   </head>
 
+  <div class="top-nav-mobile" id="topmbl">
+    <img src="public/tiltedtextsmall.png" style="margin-left:20px;margin-bottom:10px;"/>
+    <a id="tnm-button">☰</a>
+    <ul id="tnm-menu">
+      <li class="tnm-submenu" style="border-top:.4px solid #fff;"> Test</li>
+      <li class="tnm-submenu">Login</li>
+      <li class="tnm-submenu">Features</li>
+      <li class="tnm-submenu">Getting Started</li>
+    </ul>
+  </div>
+
   <header>
-    <div class="top-nav-mobile" id="topmbl">
-      <img src="public/tiltedtextsmall.png" style="margin-left:20px;margin-bottom:10px;"/>
-      <a id="tnm-button">☰</a>
-      <ul id="tnm-menu">
-        <li class="tnm-submenu" style="border-top:.4px solid #fff;"> Test</li>
-        <li class="tnm-submenu">Login</li>
-        <li class="tnm-submenu">Features</li>
-        <li class="tnm-submenu">Getting Started</li>
-      </ul>
-    </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -27,17 +29,25 @@
             <img src="public/tiltedtextsmall.png" class="top-brand"/>
             <button type="button" class="btn" style="float:right;">Login</button>
             <button type="button" class="btn undln-btn" style="float:right;">Getting Started</button>
-            <a href="#features-sec"><button type="button" class="btn undln-btn" style="float:right;">Features</button></a>
+            <a href="#features-sec" ><button type="button" class="btn undln-btn" style="float:right;">Features</button></a>
            </div>
           </div>
       </div>
         <div class="jumbotron">
-          <div class = "row">
+          <div class = "row header-lp">
            <div class="col-md-6">
-            <img src="public/tboticonnwwhite.png" style="padding-right:40px;"/>
+            <img src="public/tboticonnwwhite.png" id="boticon">
            </div>
-           <div class="col-md-6">
-             <img src="public/tiltedtext.png" />
+           <div class="col-md-6 topinfo">
+             <div id="lpinfo">
+               <img src="public/tiltedtext.png" id="headericon" style="margin-top:35px;" />
+               <h2>A Simplified Web-Based Twitch Bot.</h2>
+               <div id="tiltlpinfo">
+                 <div id="topbtn-left"><p><i class="fa fa-check-square-o" aria-hidden="true" style="padding-right:7px;"></i>Sign up</p></div>
+                 <div id="topbtn-right"><p><i class="fa fa-star" aria-hidden="true" style="padding-right:7px;"></i>Star on github</p></div>
+                  <p id="vers-left">Current Version 0.0.1</p><p id="rdate">Release Coming Soon!</p>
+               </div>
+             </div>
            </div>
          </div>
       </div>
@@ -74,13 +84,41 @@
         resizeHeader();
    });
    </script>
+   <script>
+   $(document).ready(function(){
+   // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+        } // End if
+      });
+    });
+  </script>
   <script>
   $(function() {
     $('#tnm-button').click(function(){
       $('.tnm-submenu').slideToggle();
+      });
     });
-  });
   </script>
+
+
   </body>
   <footer>
   </footer>

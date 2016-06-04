@@ -29,6 +29,12 @@ a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
 .section-white {
 	background-color: #fff;
 	height: 700px;
@@ -85,6 +91,54 @@ a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
 	border-bottom: .4px solid #fff;
 }
 
+.jumbotron {
+	background: inherit;
+	text-align:center;
+	display: inline-block;
+	align-self: auto;
+	margin: 0 auto;
+	padding: 0;
+	min-height: 100%;
+	min-height: 93.5vh;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align : center;
+	-webkit-align-items : center;
+	-moz-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	width: 100%;
+	height: 100%;
+	-webkit-box-pack : center;
+	-moz-box-pack : center;
+	-ms-flex-pack : center;
+	-webkit-justify-content : center;
+	justify-content : center;
+}
+
+.header-lp {
+	padding-right: 140px;
+}
+
+
+
+#lpinfo {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	width: 380px;
+}
+
+#lpinfo h2 {
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	padding-bottom: 10px;
+}
+
 #topmbl {
 	max-width: 768px;
 	width: 100%;
@@ -92,6 +146,8 @@ a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
 	height: 50px;
 	font-size: 30px;
 	display: none;
+	position: absolute;
+	z-index: 99999;
 }
 
 #topmbl ul, li {
@@ -150,21 +206,71 @@ a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
 	display:
 }
 
-.jumbotron {
-	background: inherit;
-	width: 100%;
-	text-align:center;
-	display: inline-block;
-	align-self: auto;
-	padding: 20px
-}
-
-.col-md-6 {
-	float: inherit;
-}
-
 #head-title div {
 	display: inline-block;
+}
+
+#tiltlpinfo {
+	width: 100%;
+}
+
+#tiltlpinfo p {
+	padding-right: 10px;
+	padding: 8px;
+	margin:0;
+	text-align: center;
+}
+
+#topbtn-left {
+	background-color: #5cb85c;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-style: bold;
+	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+	float: left;
+	width: 190px;
+}
+
+#topbtn-right {
+	background-color: #5bc0de;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-style: bold;
+	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+	width: 100%;
+	float: none;
+}
+
+#boticon {
+}
+
+#vers-left {
+	font-family: "Opan Sans", sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
+	font-style: none;
+	color:#eaeae8;
+	float: left;
+	padding: 5px 0px 0px 0px !important;
+	margin: 0 !important;
+	text-align: left;
+	display: block;
+}
+
+#rdate {
+	font-family: "Opan Sans", sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
+	font-style: none;
+	color:#eaeae8;
+	float: right;
+	padding: 5px 0px 0px 0px !important;
+	margin: 0 !important;
+	text-align: right;
 }
 
 /* Media queries */
@@ -173,6 +279,16 @@ a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
   .top-nav     { display: none; }
   #topmbl  { display:inline-block; }
 }
+
+@media (max-width: 768px) {
+	.jumbotron { height: 100%; padding-top: 30px; }
+	#boticon { width: 210px; height:252px;padding-top:16px; margin-right: 0px; margin: 0; }
+	#topbtn-left { width: 120px; height: 100%; }
+	#headericon { margin-top: 0px;}
+	#lpinfo { width: 100%; margin: 0; }
+	.header-lp {padding-right: 0px; float:none; width: 100%;}
+}
+
 
 /* keyframes for animation */
 
