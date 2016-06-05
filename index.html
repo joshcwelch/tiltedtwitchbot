@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="public/style.css">
   </head>
 
@@ -14,8 +15,7 @@
     <img src="public/tiltedtextsmall.png" style="margin-left:20px;margin-bottom:10px;"/>
     <a id="tnm-button">☰</a>
     <ul id="tnm-menu">
-      <li class="tnm-submenu" style="border-top:.4px solid #fff;"> Test</li>
-      <li class="tnm-submenu">Login</li>
+      <li class="tnm-submenu" style="border-top:.4px solid #fff;"> Login</li>
       <li class="tnm-submenu">Features</li>
       <li class="tnm-submenu">Getting Started</li>
     </ul>
@@ -27,12 +27,12 @@
         <div class="col-lg-12">
           <div class="top-nav" id="topdt">
             <img src="public/tiltedtextsmall.png" class="top-brand"/>
-            <button type="button" class="btn" style="float:right;">Login</button>
-            <button type="button" class="btn undln-btn" style="float:right;">Getting Started</button>
-            <a href="#features-sec" ><button type="button" class="btn undln-btn" style="float:right;">Features</button></a>
-           </div>
+              <button type="button" class="btn" style="float:right;">Login</button>
+                <a href="#getstartinfo" ><button type="button" class="btn undln-btn" style="float:right;">Getting Started</button></a>
+                <a href="#features-sec" ><button type="button" class="btn undln-btn" style="float:right;">Features</button></a>
+            </div>
           </div>
-      </div>
+        </div>
         <div class="jumbotron">
           <div class = "row header-lp">
            <div class="col-md-6">
@@ -44,18 +44,63 @@
                <h2>A Simplified Web-Based Twitch Bot.</h2>
                <div id="tiltlpinfo">
                  <div id="topbtn-left"><p><i class="fa fa-check-square-o" aria-hidden="true" style="padding-right:7px;"></i>Sign up</p></div>
-                 <div id="topbtn-right"><p><i class="fa fa-star" aria-hidden="true" style="padding-right:7px;"></i>Star on github</p></div>
-                  <p id="vers-left">Current Version 0.0.1</p><p id="rdate">Release Coming Soon!</p>
+                 <div id="topbtn-right"><p><i class="fa fa-star" aria-hidden="true" style="padding-right:7px;"></i>Star on GitHub</p></div>
+                  <p id="vers-left">Current Version 0.0.1</p><p id="rdate">Release Coming Soon</p>
                </div>
              </div>
            </div>
          </div>
       </div>
+    </div>
    </header>
 
   <body>
     <div class="section-white" id="features-sec">
-      Test div
+      <div class="container">
+        <div class="row" st>
+          <div class="col-sm-12 features-head">
+            <h2> Tilted's Features </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 smgrey">
+            <i class="fa fa-cloud" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
+            <h3> Web-Based </h3>
+            <p>Tilted is web-based and hosted in the cloud. No downloads and its always ready. On your PC or on the go.</p>
+          </div>
+          <div class="col-sm-4 smwhite ">
+            <i class="fa fa-tachometer" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
+            <h3> Dashboard </h3>
+            <p>With our minimalistic and modern user interface and dashboard, you can dive right in and control Tilted Bot with comfort and ease.</p>
+          </div>
+          <div class="col-sm-4 smgrey">
+            <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
+            <h3> Free </h3>
+            <p>Our bot is completley free. No ads or pressured premium services. No tricks or gimmicks. Just you and Tilted.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 smwhite">
+            <i class="fa fa-cog" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
+            <h3> Customizability </h3>
+            <p>We offer you the ability to cusomize your experience. You can set Tilted up the way you want, and even make custom commands.</p>
+          </div>
+          <div class="col-sm-4 smgrey">
+            <i class="fa fa-users" aria-hidden="true" style="font-size:5.6em;color:#4B79A1;margin-top:20px;"></i>
+            <h3> Community </h3>
+            <p>Our core features, like giveaways, timers, system, and more, help you build your community. We help you control and build.</p>
+          </div>
+          <div class="col-sm-4 smwhite">
+            <i class="fa fa-code" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
+            <h3> Open Source </h3>
+            <p>Tilted is completley open souce. We want to share our bot with the world. We welcome intergrations and people building upon our bot.</p>
+
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-sm-12" style="height:100px;"></div>
+          </div>
+      </div>
     </div>
     <div class="section-grey" id="why-tb">
       Test div 2
@@ -69,21 +114,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-      //set landing div to screen width and height
-      $( document ).ready(function() {
-        $('header').height( $(window).height() );
-      });
-    function resizeHeader(){
-      $('header').height( $(window).height() )
-    }
-      $(document).ready(function() {
-        resizeHeader();
-    });
-      $(window).resize(function() {
-        resizeHeader();
-   });
-   </script>
    <script>
    $(document).ready(function(){
    // Add smooth scrolling to all links
@@ -111,6 +141,7 @@
     });
   </script>
   <script>
+  // Mobie navaigation funtion
   $(function() {
     $('#tnm-button').click(function(){
       $('.tnm-submenu').slideToggle();
