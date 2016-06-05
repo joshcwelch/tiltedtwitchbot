@@ -338,7 +338,7 @@ padding: 0;
 	#topbtn-left { width: 120px; height: 100%; }
 	#headericon { margin-top: 0px;}
 	#lpinfo { width: 100%; margin: 0; }
-	.header-lp {padding-right: 0px; float:none; width: 100%;}
+	.header-lp {padding-right: 0px; margin-right: 0px; float:none; width: 100%;}
 }
 
 
