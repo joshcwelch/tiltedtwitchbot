@@ -16,7 +16,7 @@ body {
 
 footer {
 	background-color: #fff;
-	height: 200px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -35,6 +35,22 @@ img {
 	width: auto\9;
 }
 
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 30px;
+	color: #555;
+}
+
+p {
+	font-family: 'Roboto',sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+	line-height: 30px;
+}
+
 .section-white {
 	background-color: #fff;
 	height: 100%;
@@ -43,7 +59,7 @@ img {
 
 .section-grey{
 	background-color: #f2f2f2;
-	height: 700px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -175,6 +191,58 @@ padding: 0;
 }
 
 
+.col-sm-6 h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 30px;
+	color: #555;
+	text-align: left;
+	float: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+}
+
+.col-sm-6 p {
+	font-family: 'Roboto',sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #888;
+	line-height: 30px;
+	text-align: left;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.col-sm-6 img {
+	width: 100%;
+	height:100%
+	padding-bottom: 30px;
+}
+
+.ftr-sec {
+	text-align: center;
+	float: none;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.ftr-icn {
+	color: #ccc;
+	font-size: 3.8em;
+	margin-top: 30px;
+	margin: 10px;
+}
+
+.ftr-icn:hover {
+	color: #4B79A1;
+}
+
+.ftr-wrtng {
+	display: inline-block;
+}
+
 #lpinfo {
 	display: inline-block;
 	vertical-align: middle;
@@ -245,7 +313,7 @@ padding: 0;
 }
 
 #getstartinfo {
-	height: 400px;
+	height: 100%;
 	width: 100%;
 	background: linear-gradient(270deg, #1c7b9f, #0c3952);
   background-size: 400% 400%;
@@ -253,7 +321,10 @@ padding: 0;
   -moz-animation: bgAnimation 5s ease infinite;
   -o-animation: bgAnimation 5s ease infinite;
   animation: bgAnimation 5s ease infinite;
-	display:
+}
+
+#getstartinfo h2 {
+	color:#fff;
 }
 
 #head-title div {
@@ -338,7 +409,13 @@ padding: 0;
 	#topbtn-left { width: 120px; height: 100%; }
 	#headericon { margin-top: 0px;}
 	#lpinfo { width: 100%; margin: 0; }
-	.header-lp {padding-right: 0px; margin-right: 0px; float:none; width: 100%;}
+	.header-lp {padding-right: 0px; margin-right: 0px; margin: 0; float:none; width: 100%;}
+	.col-md-7 { text-align: center; }
+	.col-sm-12 { display: none; }
+	.devspotimg { padding-top: 20px; padding-bottom: 10px;}
+	.col-md-4 { float: none; vertical-align: center; text-align: center; }
+	.lp-left-btn { display: none; }
+	.lp-right-btn { display: none;}
 }
 
 
