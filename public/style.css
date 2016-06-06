@@ -403,7 +403,7 @@ padding: 0;
   #topmbl  { display:inline-block; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	.jumbotron { height: 100%; padding-top: 30px; }
 	#boticon { width: 210px; height:252px;padding-top:16px; margin-right: 0px; margin: 0; }
 	#topbtn-left { width: 120px; height: 100%; }

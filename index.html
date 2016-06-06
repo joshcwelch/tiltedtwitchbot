@@ -9,6 +9,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/style.css">
   </head>
 
@@ -35,7 +36,7 @@
           </div>
         </div>
         <div class="jumbotron">
-          <div class = "row header-lp">
+          <div class = "row header-lp foo">
            <div class="col-md-6">
             <img src="public/tboticonnwwhite.png" id="boticon">
            </div>
@@ -45,8 +46,8 @@
                <h2>A Simplified Web-Based Twitch Bot.</h2>
                <div id="tiltlpinfo">
                  <div id="topbtn-left"><p class="lp-left-btn" style="color:#fff;"><i class="fa fa-check-square-o" aria-hidden="true" style="color:#fff;padding-right:7px;"></i>Sign up</p></div>
-                 <div id="topbtn-right"><p class="lp-right-btn" style="color:#fff;"><i class="fa fa-star" aria-hidden="true" style="color:#fff;padding-right:7px;"></i>Star on GitHub</p></div>
-                  <p id="vers-left">Current Version 0.0.1</p><p id="rdate">Release Coming Soon</p>
+                 <a href="https://github.com/joshcwelch/tiltedtwitchbot"><div id="topbtn-right"><p class="lp-right-btn" style="color:#fff;"><i class="fa fa-star" aria-hidden="true" style="color:#fff;padding-right:7px;"></i>Star on GitHub</p></div></a>
+                  <p id="vers-left">Current Version 0.0.1<span style="font-size:10px;color:#fff;"> (PRE-ALPHA)</span></p><p id="rdate">Release Coming Soon</p>
                </div>
              </div>
            </div>
@@ -58,12 +59,12 @@
   <body>
     <div class="section-white" id="features-sec">
       <div class="container">
-        <div class="row">
+        <div class="row bar">
           <div class="col-sm-12 features-head">
             <h2>Tilted's Features.</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row foo">
           <div class="col-sm-4 smgrey">
             <i class="fa fa-cloud" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
             <h3> Web-Based </h3>
@@ -80,7 +81,7 @@
             <p>Our bot is completley free. No ads or pressured premium services. No tricks or gimmicks. Just you and Tilted.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row foo">
           <div class="col-sm-4 smwhite">
             <i class="fa fa-cog" aria-hidden="true" style="font-size:6em;color:#4B79A1;margin-top:20px;"></i>
             <h3> Customizability </h3>
@@ -104,12 +105,12 @@
     </div>
     <div class="section-grey" id="why-tb">
       <div class="container">
-        <div class="row">
+        <div class="row foo">
           <div class="col-sm-12 features-head">
             <h2>Why Tilted?</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row foo">
           <div class="col-sm-6">
             <img src="public/devicespot.png" class="devspotimg" />
           </div>
@@ -153,12 +154,12 @@
     </div>
     <div class="section-white" id="dev-info">
      <div class="container">
-      <div class="row">
+      <div class="row foo">
         <div class="col-sm-12 features-head">
           <h2>Development & API.</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row foo">
         <div class="col-md-7">
           <h3 syle="padding-bottom:5px;">Open Source and Community Driven Development.</h3>
           <p style="padding-bottom:10px;">Tilted is based on <b>Twitch API</b> and <b>TMI.js</b> and powered by <b>node.js</b> and <b>json</b>. Our front end design was built with <b>html5</b>, <b>css3</b>, <b>jquery</b>, and <b>bootstrap 3</b>. Our work is a open source web appliation that we want to share with the world. We want people to take what we have and build upon it to make twitch solutions even better.
@@ -174,12 +175,12 @@
   </div>
     <div id="getstartinfo">
       <div class="container">
-       <div class="row">
+       <div class="row foo">
          <div class="col-sm-12 features-head">
            <h2>Getting Started:</h2>
          </div>
        </div>
-       <div class="row">
+       <div class="row foo">
          <div class="col-sm-4">
            <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#fff;font-size:5em;"></i>
             <h3 style="font-size:26px;color:#fff;">1. Sign up</h3>
@@ -237,19 +238,24 @@
       });
     });
   </script>
+  <script>
+  window.sr = ScrollReveal();
+    sr.reveal('.foo');
+    sr.reveal('.bar');
+  </script>
   </body>
   <footer>
     <div class="container">
      <div class="row">
       <div class="col-sm-12 ftr-sec">
         <i class="fa fa-twitter ftr-icn" aria-hidden="true"></i>
-          <a href="https://www.twitch.tv/tiltedtwitchbot/profile"><i class="fa fa-github-alt ftr-icn" aria-hidden="true"></i>
-        <a href="http://www.twitch.tv/twitchbottilted/profile"><i class="fa fa-twitch ftr-icn" aria-hidden="true" style="font-size:3.6em"></i></a>
+          <a href="https://github.com/joshcwelch/tiltedtwitchbot"><i class="fa fa-github-alt ftr-icn" aria-hidden="true"></i>
+        <a href="https://www.twitch.tv/tiltedtwitchbot/profile"><i class="fa fa-twitch ftr-icn" aria-hidden="true" style="font-size:3.6em"></i></a>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12 ftr-wrtng">
-        <p style="display:inline-block;">© 2016 Joshua Welch. All rights reserved</p>
+        <p style="display:inline-block;">© 2016 <a href="https://github.com/joshcwelch" style="color:#5bc0de;">Joshua Welch</a>. All rights reserved</p>
         <p style="float:right;">Contact - Support - Docs - Privacy Policy - Terms</p>
       </div>
     </div>
