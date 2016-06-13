@@ -1,24 +1,23 @@
-var tmi = require('tmi.js');
+var irc = require("tmi.js");
 
 var options = {
     options: {
-      debug: true
+        debug: true
     },
     connection: {
-      cluster: "aws",
-      reconnect: true
+        cluster: "aws",
+        reconnect: true
     },
-    indentity: {
-      username: "TiltedTwtichBot",
-      password: "oauth:c680qm7fs95s0k4y8xo091r3x2mf2p"
+    identity: {
+        username: "TiltedTwitchBot",
+        password: "oauth:cf3d8qx7fvkh51202xxqkx5y52m8z3"
     },
-    channels: ["JPlanetTV"]
-
+    channels: ["#jplanettv"]
 };
 
-var client = new tmi.client(options);
+var client = new irc.client(options);
+
+// Connect the client to the server..
 client.connect();
 
-client.on('connect', function(address, port) {
-  client.action("JPlanetTV", "Hello twitch. Be good. I am Tilted.");
-});
+client.unhost("HardleyDifficult");

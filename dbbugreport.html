@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tilted - Bug Reporter</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="public/ui.css">
+    <link rel="stylesheet" type="text/css" href="public/dbcontact.css">
+    <link rel="stylesheet" type="text/css" href="vendor/summernote/dist/summernote.css">
+  </head>
+
+  <body>
+    <div class="container-fluid display-table">
+      <div class="row display-table-row">
+        <!-- Side Menu/Nav  -->
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+          <h1 class="hidden-sm hidden-xs"><img src="public/tilteddbbrand.png"/></h1>
+          <ul>
+            <li class="link">
+              <a href="dashboard.html">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="link">
+              <a href="dbcontrol.html">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Chat Control</span>
+              </a>
+            </li>
+
+            <li class="link">
+              <a href="dbtimers.html">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Timers</span>
+              </a>
+            </li>
+
+            <li class="link">
+              <a href="dbgiveaway.html">
+                <i class="fa fa-gift" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Giveaways</span>
+              </a>
+            </li>
+
+            <li class="link">
+              <a href="dbcommands.html">
+                <i class="fa fa-exclamation" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Commands</span>
+              </a>
+            </li>
+
+            <li class="link">
+              <a href="dbsettings.html">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Settings</span>
+              </a>
+            </li>
+
+            <li class="link active">
+              <a href="#collapse-help" data-toggle="collapse" aria-controls="collapse-help">
+                <i class="fa fa-question" aria-hidden="true"></i>
+                <span class="hidden-sm hidden-xs">Help & Support</span>
+              </a>
+              <ul class="collapse collapseable" id="collapse-help">
+                <li><a href="dbhlp.html">Help Documents</a></li>
+                <li class="active"><a href="dbcontact.html">Contact us</a></li>
+                <li><a href="dbbugreport.html">Bug Reporter</a></li>
+                <li><a href="dbta.html">Terms & Agreements</a></li>
+                <li><a href="dbprivacy.html">Privacy Statement</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+          <!-- Main Content  -->
+        <div class="col-md-10 col-sm-11 display-table-cell valign-top">
+          <div class="row">
+            <header id="nav-header" class="clearfix">
+              <div class="col-md-5">
+                <nav class="navbar-default pull-left">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </nav>
+                <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="search for...">
+              </div>
+              <div class="col-md-7">
+                <ul class="pull-right">
+                  <li class="hidden-xs"id="welcome">Welcome USER</li>
+                  <li class="fixed-width">
+                    <a href="">
+                      <i class="fa fa-bell" aria-hidden="true"></i>
+                      <span class="label label-warning">1</span>
+                    </a>
+                  </li>
+                  <li class="fixed-width">
+                    <a href="">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <span class="label label-message">1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="logout">
+                      <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      Log out
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+
+
+
+          <div id="content">
+            <header>
+              <h2 class="page_title">Report a bug.</h2>
+            </header>
+
+            <div class="content-inner">
+              <div class="form-wrapper">
+                <form action="MAILTO:joshcwelch@gmail.com" method="post" enctype="text/plain">
+                  <p>Please include and use detailed information, screenshots, video, console errors, code, etc. If applicable.
+                  <div class="form-group">
+                    <label class="sr-only">Name</label>
+                    <input type="text" type="form-control" id="name" name="Name:" placeholder="Enter your name..." class="form-control"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="sr-only">E-mail</label>
+                    <input type="text" type="form-control" id="e-mail" name="E-mail:" placeholder="Enter your e-mail..." class="form-control"/>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea id="targetUniqueText" name="uniqueid:" rows="1" class="form-control" readonly="true"></textarea>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label name="Message" class="sr-only">Your Message</label>
+                    <textarea class="form-control summernote" placeholder="Please enter a detailed message..." name="message"></textarea>
+                  </div>
+
+                  <div class="clearfix">
+                    <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-bug" aria-hidden="true"></i>&nbsp;Report Bug</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+        <div class="row">
+          <footer id="dashboard-footer" class="clearfix">
+            <div class="pull-left"><b>Copyright</b> &copy; 2016 Joshua Welch. All rights reserved.</div>
+            <div class="pull-right">Tilted Twitch Bot Version 0.0.1 (Pre-Alpha)</div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendor/chosen_v1.5.1/chosen.jquery.min.js"></script>
+  <script src="vendor/summernote/dist/summernote.min.js"></script>
+  <script>
+  $(document).ready(function()  {
+    $('[data-toggle="offcanvas"]').click(function(){
+      $('#side-menu').toggleClass('hidden-xs');
+    });
+  });
+  </script>
+  <script>
+  $('.summernote').summernote({
+    height:200
+  });
+  </script>
+  <script>
+  var randNum = Math.floor((Math.random() * 100000) + 100);
+  var date = new Date();
+  var components = [
+      date.getYear(),
+      date.getMonth(),
+      date.getDate(),
+      date.getHours(),
+      date.getMinutes(),
+      date.getSeconds(),
+      date.getMilliseconds()
+  ];
+
+  var id = components.join("");
+
+    $('#targetUniqueText').append("BugID:00116_"  + randNum + " " + " Date:"+ date  ).text();
+  </script>
+  </body>
