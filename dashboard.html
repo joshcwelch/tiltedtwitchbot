@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="public/ui.css">
+    <link rel="stylesheet" type="text/css" href="public/dashboard.css">
   </head>
 
   <body>
@@ -90,7 +91,7 @@
                     <span class="icon-bar"></span>
                   </button>
                 </nav>
-                <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="search for...">
+                <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="search help docs for...">
               </div>
 
               <div class="col-md-7">
@@ -119,6 +120,172 @@
             </header>
         </div>
 
+        <div class="dashboard-con">
+          <div class="row">
+            <div class="col-md-3 sb-left hidden-sm hidden-xs">
+              <div class="admin-content-con">
+                <header class="clearfix sb-hdr">
+                  <h5>TOP CHATTER</h5>
+                </header>
+                <h3>USER</h3>
+              </div>
+            </div>
+              <div class="col-md-3 sb-leftmdl hidden-sm hidden-xs">
+                <div class="admin-content-con">
+                  <header class="clearfix sb-hdr">
+                    <h5>NEWEST SUBSCRIBER</h5>
+                  </header>
+                  <h3>USER</h3>
+                </div>
+            </div>
+            <div class="col-md-3 sb-rightmdl hidden-sm hidden-xs">
+              <div class="admin-content-con">
+                <header class="clearfix sb-hdr">
+                  <h5>NEWEST FOLLOWER</h5>
+                </header>
+                <h3>USER</h3>
+              </div>
+          </div>
+          <div class="col-md-3 sb-right hidden-sm hidden-xs">
+            <div class="admin-content-con">
+              <header class="clearfix sb-hdr">
+                <h5>RECENT HOST</h5>
+              </header>
+                <h3>USER</h3>
+            </div>
+        </div>
+          </div>
+
+          <div class="row">
+           <div class="col-md-6 dashboard-left-cell">
+             <div class="admin-content-con">
+               <header class="clearfix">
+                 <h5 class="pull-left">Stream Volume</h5>
+                 <label
+                <a class="btn btn-xs btn-primary pull-right" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;View Log</a>
+               </header>
+               <table class="table table-striped">
+                 <thead>
+                   <th>Time</th>
+                   <th>Viewers</th>
+                   <th>Chatters</th>
+                   <th>Actions</th>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td>8:00pm CST</td>
+                     <td>126</td>
+                     <td>86</td>
+                     <td>
+                       <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Announce</a>
+                       <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Remove</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>8:10pm CST</td>
+                     <td>124</td>
+                     <td>82</td>
+                     <td>
+                       <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Announce</a>
+                       <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Remove</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>8:20pm CST</td>
+                     <td>162</td>
+                     <td>110</td>
+                     <td>
+                       <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Announce</a>
+                       <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Remove</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>8:30pm CST</td>
+                     <td>148</td>
+                     <td>126</td>
+                     <td>
+                       <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Announce</a>
+                       <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Remove</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>8:40pm CST</td>
+                     <td>148</td>
+                     <td>126</td>
+                     <td>
+                       <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Announce</a>
+                       <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Remove</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>8:50pm CST</td>
+                     <td>148</td>
+                     <td>126</td>
+                     <td>
+                       <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Announce</a>
+                       <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Remove</a>
+                     </td>
+                   </tr>
+
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="col-md-6 dashboar-right-cell hidden-sm hidden-xs">
+             <div class="admin-content-con">
+             <header class="clearfix">
+               <h5 class="pull-left">Live Chat <span class="label label-success">Bot Connected</span></h5>
+                 <a class="btn btn-xs btn-primary pull-right" href="#"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Disconnect Bot</a>
+             </header>
+             <div class="chat-box-dash">
+
+               </div>
+             </div>
+             </div>
+           </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 dashboard-left-cell">
+              <div class="admin-content-con">
+                <header class="clearfix">
+                  <h5 class="pull-left">Bot Actions</h5>
+                </header>
+                <table class="table table-striped">
+                  <thead>
+                    <th>Date/Time</th>
+                    <th>Action</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>06/12/16 8:00pm CST</td>
+                      <td>timed-out <b>USER</b></td>
+                    </tr>
+                    <tr>
+                      <td>06/12/16 8:00pm CST</td>
+                      <td>timed-out <b>USER</b></td>
+                    </tr>  <tr>
+                        <td>06/12/16 8:00pm CST</td>
+                        <td>timed-out <b>USER</b></td>
+                      </tr>  <tr>
+                          <td>06/12/16 8:00pm CST</td>
+                          <td>timed-out <b>USER</b></td>
+                        </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6 dashboar-right-cell">
+              <div class="admin-content-con">
+              <header class="clearfix">
+                <h5>Events</h5>
+              </header>
+              <div class="events-main">
+                  Coming soon!
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div class="row">
           <footer id="dashboard-footer" class="clearfix">
             <div class="pull-left"><b>Copyright</b> &copy; 2016 Joshua Welch. All rights reserved.</div>
@@ -127,6 +294,7 @@
         </div>
       </div>
     </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script>
