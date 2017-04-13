@@ -1,5 +1,5 @@
 # TiltedTwitchBot
-A node.js IRC web based twitch bot.
+A web-based twitch chat bot and stream tool application.
 
 This is project is currently under early development. Please be patient as we add features and more information.
 
