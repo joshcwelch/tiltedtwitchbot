@@ -1,5 +1,5 @@
 # TiltedTwitchBot
-A web-based twitch chat bot and stream tool application.
+A web-based twitch chat bot and stream tool.
 
 This is project is currently under early development. Please be patient as we add features and more information.
 
