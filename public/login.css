@@ -2,7 +2,7 @@ body {
   background-color: #4B79A1;
   color: #fff;
   font-family:'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 27px;
   font-size: 18px;
 }
@@ -18,7 +18,7 @@ a:hover {
 }
 
 h2 {
-  font-weight: 100;
+  font-weight: 300;
   color: #555;
   text-align: center;
   font-size: 22px;
@@ -69,13 +69,12 @@ input:focus,.box input:active,.box button:focus,.box button:active{
 }
 
 .info-sec {
-    padding: 140px 20px 20px;
+    padding: 200px 20px 20px;
   }
 
  .li-sec {
   background-color: #fff;
   color: #555;
-  height: 290px;
   max-height: 400px;
   max-width: 400px;
   padding: 15px 20px 20px;
@@ -85,11 +84,18 @@ input:focus,.box input:active,.box button:focus,.box button:active{
   text-align: center;
  }
 
+ .li-btns {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  margin-top: 10%;
+ }
+
 .main-btn {
   background-color: #6D51A0;
   margin: 0 10px 0px 10px;
   border-radius: 4px;
-  display: block;
   height: 35px;
 }
 
