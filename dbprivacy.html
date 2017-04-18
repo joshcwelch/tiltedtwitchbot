@@ -1,230 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
   <head>
-    <title>Tilted - Privacy</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="public/ui.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPlanet</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Doppio+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/robbiemu/Twitch-Channel-Status/master/twitch-channel-status.js" data-clientid="1hf8cowcczuqa891ls7jhhofdfylki"></script>
+    <style> body {background-color: #fff; background: none !important; overflow: auto;}</style>
   </head>
 
-  <body>
-    <div class="container-fluid display-table">
-      <div class="row display-table-row">
-        <!-- Side Menu/Nav  -->
-        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
-          <h1 class="hidden-sm hidden-xs"><img src="public/tilteddbbrand.png"/></h1>
-          <ul>
-            <li class="link active">
-              <a href="dashboard.html">
-                <i class="fa fa-tachometer" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Dashboard</span>
-              </a>
-            </li>
-
-            <li class="link">
-              <a href="dbcontrol.html">
-                <i class="fa fa-comments" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Chat Control</span>
-              </a>
-            </li>
-
-            <li class="link">
-              <a href="dbtimers.html">
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Timers</span>
-              </a>
-            </li>
-
-            <li class="link">
-              <a href="dbgiveaway.html">
-                <i class="fa fa-gift" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Giveaways</span>
-              </a>
-            </li>
-
-            <li class="link">
-              <a href="dbcommands.html">
-                <i class="fa fa-exclamation" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Commands</span>
-              </a>
-            </li>
-
-            <li class="link">
-              <a href="dbsettings.html">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Settings</span>
-              </a>
-            </li>
-
-            <li class="link">
-              <a href="#collapse-help" data-toggle="collapse" aria-controls="collapse-help">
-                <i class="fa fa-question" aria-hidden="true"></i>
-                <span class="hidden-sm hidden-xs">Help & Support</span>
-              </a>
-              <ul class="collapse collapseable" id="collapse-help">
-                <li><a href="dbhlp.html">Help Documents</a></li>
-                <li><a href="dbcontact.html">Contact us</a></li>
-                <li><a href="dbbugreport.html">Bug Reporter</a></li>
-                <li><a href="dbta.html">Terms & Agreements</a></li>
-                <li><a href="dbprivacy.html">Privacy Statement</a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </div>
-          <!-- Main Content  -->
-        <div class="col-md-10 col-sm-11 display-table-cell valign-top">
-          <div class="row">
-
-            <header id="nav-header" class="clearfix">
-              <div class="col-md-5">
-                <nav class="navbar-default pull-left">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </nav>
-                <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="search for...">
-              </div>
-
-              <div class="col-md-7">
-                <ul class="pull-right">
-                  <li class="hidden-xs"id="welcome">Welcome USER</li>
-                  <li class="fixed-width">
-                    <a href="">
-                      <i class="fa fa-bell" aria-hidden="true"></i>
-                      <span class="label label-warning">1</span>
-                    </a>
-                  </li>
-                  <li class="fixed-width">
-                    <a href="">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                      <span class="label label-message">1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="index.html" class="logout">
-                      <i class="fa fa-sign-out" aria-hidden="true"></i>
-                      Log out
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </header>
-
-        </div>
-
-        <div id="content">
-          <header>
-            <h2 class="page_title">Please read carefully.</h2>
-          </header>
-
-          <div class="content-inner" style="font-weight:300;">
-            <h2>
-          	  Overview
-             </h2>
-
-             <p>Please read this Privacy Policy carefully before the use of the Tilted Twitch Bot website (the "Service") operated by Joshua Welch ("I", "me", "us", "we", or "our") as it applies to all visitors, users and others who access or use the Service.</p>
-
-               <p>Your access to and use of the Service pertains to you (the "User") and you represent that you understand the information within this Policy.</p>
 
 
+<body>
+<div class="container-fluid privatse" style="color:#4f4f4f;max-width:834px;">
 
-              <p>
-              	Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.
-              </p>
+  <div class="row" id="top">
+  <h2><b>JPlanet Development - Privacy Policy</b></h2>
+  <p>Updated February 22nd, 2017 at 1:58pm CST.</p>
+  <h2>
+  </div>
 
-              <ul>
-              	<li>
-              		Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
-              	</li>
-              	<li>
-              		We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.
-              	</li>
-              	<li>
-              		We will only retain personal information as long as necessary for the fulfillment of those purposes.
-              	</li>
-              	<li>
-              		We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.
-              	</li>
-              	<li>
-              		Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.
-              	</li>
-              	<li>
-              		We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
-              	</li>
-              	<li>
-              		We will make readily available to users information about our policies and practices relating to the management of personal information.
-              	</li>
-                <li>
-                  <p>
-                    We will notify any user of any data breach, loss, or theft of personal information within 7 buisness days of the event.
-                  </p>
-                </li>
-              </ul>
+  <div class="row">
+  <p>The JPlanet Development Team, its site administrators, community members, and affiliates have developed this privacy policy to explain how the JPlanet Website ('this site' or 'site') collects, stores, and uses any information or data from a visitor of this site and how it pertains to services offered at this site.</p>
+  </div>
 
-              <p>
-              	We are committed to conducting our Service in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. If you have any questions about our <a href="dbta.html">Terms</a> or Privacy Policy, please <a href="dbcontact.html">contact us.</a>
-              </p>
+  <div class="row">
+  <p>Should you have any questions or concerns regaurding your privacy, or this privacy policy, you may contact us at any time at dev@jplanet.io</p>
+  </div>
 
-              <hr>
+  <div class="row">
+  <p>JPlanet reserves the right to modify this policy within resasonable times. Please review this document frequently as it could pertain to changes regaurding how your private data or information is used or collected.</p>
+  </div>
 
-              <h2>Privacy Policy</h2>
+  <div class="row">
+  <p style="padding:10px;"></p>
+  </div>
 
-              <p><strong>Terms and Definitions</strong></p>
-              <p> Any person or persons who visits this site with intention to browse or learn information about our service and does not use our service is reffered to as a "Visitor."</p>
-              <p> Any person or persons who visits this site with intention to use our service is reffered to as the "User."</p>
-              <p> Any information collected by the use of our service that does not personally identifiable to you (the "User" or "Visitor") is reffered to as "Non Personal Information".</p>
-              <p> Any information collected by the use of our service that is personally identifiable to you (the "User") is reffered to as "Personal Information."</p>
-              <p> Small text files containing a string of characters that can be placed on your computer or mobile device that uniquely identify your browser or device are reffered to as "Cookies."
-              <p> Public information provided a broswer or mobile device such as your internet service provider, your IP adress, proxy server, and other public information is reffered to as "Automaiclly Sent Information."
-              <p><strong>Information Collection</strong></p>
-              <p>Any user may be required to provide us with personal information in order to use or service. This does not pertain to visitors, as they are only seeking knowledge and information. Any information collected from visitors will be Non Personal Information.</p>
-              <p><strong>Collection of Computer Based Information</strong></p>
-              <p>We collect the following computer based information:</p>
-                <ul><li>Cookies</li>
-                <li>Automaticlly Sent Information</li></ul>
-              <p>Generally, The user can control the distrubution of this information to services.</p>
-              <p><strong>Collection of User Based Information</strong></p>
-              <p>We may collect the following Personal Information:</p>
-              <ul><li>Full Name</li>
-                <li>E-Mail Adress</li>
-                <li>Phone Number</li>
-                <li>User Third-Party Infomration</li></ul>
-              <p>The user will be prompted for any of this information, and will have the decision to disclose this information.</p>
-              <p><strong></strong></p>
-              <p> </p>
-              <p><strong></strong></p>
-              <p> </p>
-              <p><strong></strong></p>
-              <p> </p>
-              <p><strong></strong></p>
-              <p> </p>
+  <div class="row">
+  <p><b>1. Third-Party Software or Services</b></p>
+  </div>
 
-          </div>
-        </div>
+  <div class="row">
+  <p>This site may use third-party software or services that may have a policy that differs from the one we have developed. Please check below for more information on these services.</p>
+  <p><a href="https://www.twitch.tv/p/privacy-policy" style="color:#0992bc !important;">Twitch TV Privacy Policy</a></p>
+  </div>
 
-        <div class="row">
-          <footer id="dashboard-footer" class="clearfix">
-            <div class="pull-left"><b>Copyright</b> &copy; 2016 Joshua Welch. All rights reserved.</div>
-            <div class="pull-right">Tilted Twitch Bot Version 0.0.1 (Pre-Alpha)</div>
-          </footer>
-        </div>
-      </div>
-    </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script>
-  $(document).ready(function()  {
-    $('[data-toggle="offcanvas"]').click(function(){
-      $('#side-menu').toggleClass('hidden-xs');
-    });
-  });
-  </script>
-  </body>
+  <div class="row">
+  <p><b>2. Age & Usage</b></p>
+  </div>
+
+  <div class="row">
+  <p>If you are under the age of thirteen, or a minor of your country, please ask a legal guardian permission to use this site, its services, and to review this policy. JPlanet, its affiliates, and the JPlanet site does not knowingly or willfully collect data from any person under the age thirteen years old. If you feel like data has been collected from a person under the age of thirteen, please contact us immieditly so we can obtain consent, or remove the data collected. JPlanet and its affiliates encourage all parents to review and watch minor activity on the internet, and play a proactive roll in their childs web experience.  </p>
+  </div>
+
+  <div class="row">
+  <p><b>3. Information & Data Collection</b></p>
+  </div>
+
+  <div class="row">
+  <p>The JPlanet site collects different types of information and data. This usually is narrowed down to either personal or non-personal data. Below is a detailed list of all the types of information or data we collect.</p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px; padding-top:5px;"><b>A. Personal Data/Information</b></p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">When defining personal data or information in this policy, we are referring to data or inofmration that is directly identifiable to you as an individual.</p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">Situations were a user or an individual is most likey to submit data or information to this site include but are not limited to: (i) required registration for services, (ii) requesting technical support or contacting site administrators, (iii) and any or otherwise the use of services were personal data or information is required for use and/or participation.</p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">Personal data or information collected may vary depending on what activity or service that you are engaged in on this site. The personal data that this site may collect include but are not limmited to: (i) your name, (ii) your e-mail, (iii) spefic system identifiable information, and (iiii) your username for third-party services.</p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">When it comes to this site and the usage of personal and non-personal data, this site may use both idividually or combined for the purpose of improving services, providing technical support, and managing services and site functions. </p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;"><b>B. Non-Personal Data/Information</b></p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">When defining non-personal data or information in this policy, we are referring to data or information that is NOT directly identifable to you as an individual. Additionally, this sites deffinition of non-personal data usually refers to "non-personalized information" or "aggregate information" that is collected to observe the use of JPlanet site services and site functions and in which all personal data or information has been removed.</p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">This site may or may not at anytime use tools or automated data collection of non-personal information or dtat for the use of anaylyzing the use of services, this site, etc. </p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;">When it comes to this site and the usage of personal and non-personal data, this site may use both idividually or combined for the purpose of improving services, providing technical support, and managing services and site functions. </p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;"><b>C. Location Data</b></p>
+  </div>
+
+  <div class="row">
+  <p style="padding-left:20px;padding-bottom:5px;">At this time, this site does not collect or store any location data. However, location data could be implemented in the near future. Please check this policy frequently for any further information of locatation data collection in the future. </p>
+  </div>
+
+  <div class="row">
+  <p><b>4. Information & Data Retention</b></p>
+  </div>
+
+  <div class="row">
+  <p>This site retains any data or information pursuant to this policy for the period neccessary to fulfill the purposes or functions outlined in this policy. This site however, may retain data or information for a longer period if required to do so or permitted to do so by law. Thereafter, if the data or information collected is no longer needed for purposes specified in this policy, all aforementioned data in the possesion of this site or it administrators is deleted within a reasonable timeframe.</p>
+  </div>
+
+  <div class="row">
+  <p>Irrespective to previously information mentioned above, this site may still retain some information or data for the sole purpose of resolving disputes, enforcing user agreements, and also to comply with legal and technical requirements and constraints related to the integrity, security, and operation of this site and its services.</p>
+  </div>
+
+  <div class="row">
+  <p>Any information or data collected through this site may be stored, processed, or transfered to and from computers and/or servers in any country where we operate or offer services.</p>
+  </div>
+
+  <div class="row">
+  <p><b>5. Security and Safegaurds</b></p>
+  </div>
+
+  <div class="row">
+  <p>This site and all JPlanet community members, administrators, and affiliates take information and data security very seriously. This website generally follows the industry standards and maintains reasonable security and safegauding of any information or data collected. Thus, this site attempts its best to ensure to saftey, security, privacy, and integrity of any users or individuals non-personal or personal data or information collected. Data and information is stored in a manner that is not available to the general public. However, no security or encyption method can be guaranteed to protect information or data from a breach event or from hackers, or even basic human error.</p>
+  </div>
+
+  <div class="row">
+  <p>In the event of a data breach, or a release of protected or secure information or data, this site and its administrators will notify any user affected directly on this site through the form of a notification, or by e-mail if applicable, within 30 business days from the event. Frequent visits to this site are suggested to stay up to date on any alerts or notifications to its users.  </p>
+  </div>
+
+  <div class="row">
+  <p style="padding-top:20px;"><b>Conclusion & Agreement</b></p>
+  </div>
+
+  <div class="row">
+  <p>By reviewing this policy and by continuing to use this site, its functions, and its services, you agree to and aknowledge all of the funtions outlined in this policy. Any attempts to misuse this site in a fasion that violates the information outlined in the policy will result in a permanant ban from access to this site and its services. Any attempt to "steal" or "breach" any personal information or data collected on this site will result in legal action within the limitations of the law where the infraction took place.</p>
+  </div>
+
+  <br/>
+
+</div>
+
+<div class="footer">
+<div class="container-fluid cntntwtbtm" style="max-width:834px;">
+  <div class="row">
+    <p style="float:left;">Copyright &copy; JPlanet Development 2017</p>
+    	 <a href="index.html" style="color:#0992bc!important;" target="_self"><p style="float:right;"><i class="fa fa-home" aria-hidden="true" style="color:#0992bc!important;"></i>Back to home</p></a>
+    <a href="#top" style="color:#0992bc!important;"><p style="float:right;"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="color:#0992bc!important;"></i>Back to top</p></a>
+</div>
+</div>
+</div>
+
+<script>
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+   if (target.length) {
+    $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+    return false;
+  }
+ }
+});
+</script>
+
+</body>

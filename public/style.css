@@ -20,6 +20,15 @@ footer {
 	width: 100%;
 }
 
+footer a {
+	color: #676767;
+}
+
+footer a:hover {
+	color: #676767;
+	text-decoration: underline;
+}
+
 a, a:hover, a:focus, a:active, a:focus:active, a:target, a.active {
 	color: #fff;
 	background-image: none;
