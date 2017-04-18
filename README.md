@@ -9,3 +9,5 @@ Note: The current build is ONLY cosmetic. Functionality of the bot/site will not
 
 Questions or ideas?
 Contact me here: josh@jplanet.io
+
+2017 JPlanet Development. All rights reserved.
