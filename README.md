@@ -8,6 +8,7 @@ Current Status: Building front-end UI
 Note: The current build is ONLY cosmetic. Functionality of the bot/site will not work until the rest of the build is released.
 
 Questions or ideas?
-Contact me here: josh@jplanet.io
+Contact us here: josh@jplanet.io tony@jplanet.io
+http://jplanet.io
 
 2017 JPlanet Development. All rights reserved.
